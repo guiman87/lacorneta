@@ -1,0 +1,1557 @@
+/* Welcome and glad you are using Reverie.
+ * This is the main stylesheet loaded by default.
+ * Edit the file and have fun.
+ * http://themefortress.com/reverie */
+
+// import normalize, stay at top
+// @import "normalize";
+
+// Global Foundation Settings
+@import "settings";
+
+// Tweak the mixin for WordPress, this might create some extra CSS in additional to app.css
+@import "foundation/components/pagination";
+
+// Reverie comes with a standalone Foundation stylesheet already
+// @import "foundation";
+
+// Load some Compass magic, note you will need to install Compass first
+@import "compass/css3/shared";
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+
+/* Start to customize Reverie */
+
+// add transition effect
+a, a:visited, a:hover, a:visited:hover {
+	@include transition(all 100ms linear);
+}
+
+// add some margin for embeds in post
+figure {
+	margin: 0 auto $panel-margin-bottom;
+}
+
+// Add class for images
+figure img {
+	@include border-radius(5px);
+}
+
+img.alignright {
+	float: right;
+	margin: 0 0 18px 18px;
+}
+	
+img.alignleft {
+	float: left;
+	margin: 0 18px 18px 0;
+}
+
+img.aligncenter {
+	display: block;
+	margin: 18px auto;
+	}
+
+// Fix gallery images display
+.gallery {
+	dt, dl {
+		display: inline-block;
+	}
+	dl {
+		margin-left: rem-calc(9);
+		margin-right: rem-calc(9);
+	}
+}
+
+// Add HTML5 Caption Class for Images
+figure.figure {
+	margin: 0 auto;
+	display: table;
+	figcaption {
+		font-size: rem-calc(14);
+		line-height: 1.4;
+		font-style: italic;
+		padding: 8px 10px;
+		color: #999;
+		margin-bottom: $panel-margin-bottom;
+		display: table-caption;
+		caption-side: bottom;
+	}
+}
+
+figure.alignright.figure {
+	float: right;
+	margin: 0 0 18px 18px;
+}
+
+figure.alignleft.figure {
+	float: left;
+	margin: 0 18px 18px 0;
+}
+
+.footer-widget {
+	background-color: black;
+}
+
+body > header.contain-to-grid {
+	margin-bottom: rem-calc(8);
+	max-width: 100%;
+	padding-bottom: 0;
+	margin-top: rem-calc(38);
+}
+
+#content {
+	background-color: black;
+}
+.container {
+  margin-top: 1%;
+}
+
+.home .container {
+  margin-top: 3%;
+}
+
+.index-card {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: rem-calc(32);
+	margin-bottom: rem-calc(32);
+}
+
+span.author,
+time {
+	font-size: rem-calc(15);
+	color: #999;
+	a {
+		color: #999;
+		font-weight: bold;
+		&:hover, &:focus {
+			color: $body-font-color;
+		}
+	}
+}
+
+// define content padding for later use
+$content-padding: rem-calc(20);
+
+.entry-author {
+	background-color: black;
+	border: none;
+	padding: rem-calc(50) rem-calc(80);
+	margin: rem-calc(50) (-($column-gutter/2));
+	.avatar {
+		margin-right: rem-calc(40);
+		margin-bottom: rem-calc(24);
+	}
+	h4 {
+		a {
+			color: #999;
+			&:hover, &:focus {
+				color: $body-font-color;
+			}
+		}
+	}
+	p {
+		color: #bbb;
+	}
+}
+
+.post strong, b {color: #99cc00;}
+.post a {color: #888888; text-decoration: underline;}
+.post a:hover {color: #b9b261 !important; text-decoration: underline;}
+.post header,
+.page header {
+	margin-bottom: rem-calc(0);
+}
+
+.entry-tags {
+	color: #999;
+	font-size: rem-calc(15);
+	a {
+		color: #999;
+		&:hover, &:focus {
+			color: $body-font-color;
+		}
+	}
+}
+
+
+// add new pagination class for WordPress, Sass is amazingly fast
+.page-numbers {
+	color: #999;
+	@include pagination;
+}
+
+.pagination-centered ul.page-numbers li {
+  float: none;
+  display: inline-block;
+}
+
+.page-numbers li span.current {
+  @include border-radius(3px);
+}
+
+.page-numbers li {
+  margin-left: rem-calc(8);
+}
+
+// customizing pagination for WordPress using Foundation mixins, this is not beautiful I know
+.page-numbers li {
+	span:hover a,
+	span a:focus {
+		background: $pagination-link-active-bg;
+	}
+	span.current {
+		background: $pagination-link-current-background;
+		padding: $pagination-link-pad;
+		color: $pagination-link-current-font-color;
+		font-weight: $pagination-link-current-font-weight;
+		cursor: $pagination-link-current-cursor;
+	}
+}
+
+.avatar {
+	@include border-radius(50%);
+	float: left;
+}
+
+// add some basic comment styles
+ol.commentlist {
+	margin-left: 0;
+	margin-top: 2em;
+	p {
+		font-size: rem-calc(15);
+		line-height: 1.5;
+	}
+	ul.children {
+		margin-left: rem-calc(64);
+	}
+	li {
+		list-style: none;
+		margin-bottom: 2em;
+	
+		.comment-author img {
+			float: left;
+			margin: 0 1em 0 0;
+		}
+		.author-meta {
+			display: inline-block;
+			cite.fn {
+				font-style: normal;
+				font-weight: 600;
+				margin-right: rem-calc(8);
+			}
+			time a {
+				color: #ccc;
+				font-size: rem-calc(14);
+				margin-right: rem-calc(8);
+			}
+			.comment-edit-link {
+				color: #bbb;
+				font-size: rem-calc(14);
+			}
+		}
+		section.comment {
+			margin-left: rem-calc(64);
+			margin-bottom: rem-calc(32);
+			a.comment-reply-link {
+				font-size: rem-calc(14);
+				font-weight: 600;
+				color: #bbb;
+				&:hover, &:focus {
+					color: $body-font-color;
+				}
+			}
+		}
+	}
+}
+
+
+
+// Start the sidebar
+#sidebar {
+	margin-top: rem-calc(20);
+}
+
+#sidebar, .footer-widget {
+	.panel {
+		border: none;
+		background-color: black;
+		padding:0;
+		a {
+			color: #999;
+			font-size: rem-calc(15);
+			&:hover, &:focus {
+				color: $body-font-color;
+			}
+		}
+	}
+	ul {
+		list-style-type: none;
+		margin-left: 0;
+	}
+	.widget {
+	  margin-bottom: rem-calc(10);
+		h4 {
+			text-transform: uppercase;
+			font-size: rem-calc(16);
+			padding-bottom: rem-calc(16);
+			border-bottom: 1px solid #ddd;
+			color: #888;
+			font-weight: 600;
+		}
+	}
+}
+
+
+
+// Start the footer
+
+footer.full-width {
+        background-color: #0c0b0b;
+	border-top:12px solid #362C2C;
+	padding-top: 2rem;
+	margin-top: rem-calc(45);
+	p {
+		font-size: rem-calc(14);
+	}
+	a {
+		color: #666;
+		font-size: rem-calc(15);
+		&:hover, &:focus {
+			color: $body-font-color;
+		}
+	}
+	.love-reverie {
+		border-top: 1px solid #ccc;
+		padding-top: rem-calc(24);
+	}
+}
+
+@media #{$small-up} {
+	.entry-author {
+		.avatar {
+			margin-bottom: rem-calc(20);
+		}
+	}
+}
+
+@media #{$medium-up} {
+	#content {
+		padding: $content-padding;
+	}
+	.entry-author {
+		margin: rem-calc(50) (-$content-padding);
+	}
+}
+
+@media #{$large-up} {
+	#sidebar {
+		padding-left: 0;
+		padding-right: 0;
+		margin-top: rem-calc(30);
+	}
+	.footer-widget {
+		margin-top: rem-calc(48);
+		padding-top: rem-calc(32);
+	}
+	.single-event .attachment-imagen-single, .single-location .attachment-imagen-single {
+	  display: block;
+	  float: right;
+	  margin: 0 0 1% 2%;
+	  max-width: 50%;
+	}
+	.name img {
+	  margin-top: rem-calc(11);
+	}
+	.category-cornetazos .entry-content {
+	  img {
+	    min-width: 500px;
+	  }
+	  
+	}
+	.cornetahead {
+	  max-width: 500px;
+	}
+	.attachment-single-cornetazo {
+	  img {
+	    display: inline-block;
+	  }
+	}
+}
+
+.arcoiris {
+  background-image: url("../img/linearcoiris.png") !important;
+  background-repeat: repeat-y;
+  background-position: 361px 0%;
+  height: 3px;
+  width: 97%;
+  position: absolute;
+  top: 66px;
+  right: 135px;
+}
+
+//PIZARRA
+#pizarra {
+  margin-top: rem-calc(50);
+}
+//PARA HACER HOY
+
+#hoy .tabs dd > a {
+padding-right: 45%;
+padding-left: 6%;
+padding-bottom: 0%;
+padding-top: 2px;
+background: #161515;
+color: #ab7f32;
+line-height: rem-calc(21);
+font-weight: bold;
+}
+
+#hoy .tabs dd  {
+width: 50%;
+}
+
+#hoy .tabs .tablinkinterior.active a {
+background: #FF8500;
+color: #000000;
+}
+
+#hoy .tabs .tablinkmontevideo.active a {
+background-color: #5AA802;
+color: black;
+}
+
+#hoy h1 {
+  margin-bottom: 0;
+}
+#titulohoy {
+  width: 100%;
+  display: block;
+  font-family: $alegreya;
+  display: block;
+  font-weight: 800;
+  font-size: rem-calc(44);
+  word-spacing: rem-calc(16);
+  color: #98ff28;
+  line-height: rem-calc(48);
+}
+
+#hoy, #diapositivas {
+margin-top: 0;
+}
+
+span.hoytime {
+  color: #999999;
+  font-weight: bold;
+}
+
+span.hoylocation {
+  font-variant: small-caps;
+  font-size: 0.9em;
+  color: #D5514D;
+}
+
+#accordioninterior .ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default, .ui-widget-content {
+  border-color: #FF8500;
+}
+/******************************************************************
+ BUSCADOR S *E VIENE y Tablaeventos
+ ******************************************************************/
+
+#titulobusca {
+width: 100%;
+display: block;
+font-family: $alegreya;
+display: block;
+font-weight: 800;
+font-size: rem-calc(24);
+word-spacing: rem-calc(16);
+color: #FCF0F0;
+line-height: rem-calc(24);
+margin-top: -0.5rem;;
+
+}
+
+#seviene {
+font-family: $century;
+overflow-y: auto;
+overflow-x: hidden;
+max-height: 490px;
+h2 {
+  display: block;
+  width: 20%;
+  font-size: 1em;
+  font-weight:900;
+  margin-bottom: 0em;
+  padding: 0.10em;
+  color: #7d7d7d;
+}
+table {
+  width: 99%;
+  border-top: 4px solid #172674;	
+}
+}
+
+
+#panel3-2 {
+h2 {
+  display: block;
+  width: 20%;
+  background-color: #A3268A !important;
+  color: #FFFFFF;
+}
+table {
+  width: 99%;
+  border-top: 4px solid #A3268A;	
+}
+
+.col_nombre {
+  width: 50%;
+}
+
+}
+
+#panel3-1 {
+h2 {
+  background-color: #172674;
+}
+}
+
+
+#tabsseviene  dd > a {
+padding-right: 45%;
+padding-left: 6%;
+padding-bottom: 0%;
+padding-top: 2px;
+background: #161515;
+color: #93149E;
+line-height: rem-calc(21);
+font-weight: bold;
+}
+
+#tabsseviene  dd  {
+width: 50%;
+}
+
+#tabsseviene  .tablinkinterior.active a {
+background: #A3268A;
+color: white;
+}
+
+#tabsseviene  .tablinkmontevideo.active a {
+background-color: #172674;
+color: white;
+}
+
+
+
+.tablaeventos {
+  table {
+    display: table;
+    border-collapse: collapse;
+    background-color: black;
+    border: none;
+  }
+  tr {
+    border-width: 2px 0px 0px 0px;
+    border-style: solid;
+    border-color: #020A33;
+    background-color: black;
+  }
+  td {
+    background-color: black;
+  }	
+  .col_nombre {
+    width: 65%;
+    background-color: black;
+  }
+  
+  .col_state {
+    color: #A3268A;
+  }
+  
+  .col_location {
+    a {
+      font-size: 0.9em;
+      color: gray;
+      background-color: black;
+      font-variant: small-caps;
+    }
+  }
+}
+
+
+
+
+
+#tituloseviene {
+width: 100%;
+display: block;
+font-family: $alegreya;
+display: block;
+font-weight: 800;
+font-size: rem-calc(44);
+word-spacing: rem-calc(16);
+color: #1939e0;
+line-height: rem-calc(48);
+margin-top: -0.5rem;;
+
+}
+
+// SLIDER
+.slide_img {
+
+}
+
+/*slider */
+
+.title_slider {
+  font-family: $alegreya;
+  display: block;
+  font-weight: 800;
+  font-size: rem-calc(25);
+  line-height: rem-calc(22);
+  margin: 0;
+  color: white;
+  display: inline-block;
+}
+.locationevento {
+  font-family: $alegreya;
+  color: #d7db22;
+  font-size: rem-calc(21);
+  font-weight: bold;
+  display: inline-block;
+}
+
+.fechaeventoslide {
+  font-family: $alegreya;
+  color: white;
+  font-size: rem-calc(21);
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 7px;
+}
+.orbit-progress {
+  display: none !important;
+}
+
+
+
+/******************************************************************
+ * CORNETAZOS
+ ******************************************************************/
+#titulocornetazos {
+color: #ff1f64;
+font-family: $alegreya;
+margin-top: 12%;
+font-size: rem-calc(36);
+margin-bottom: 0;
+font-weight: 800;
+line-height: rem-calc(36);
+}
+#cornetazos {
+
+img {
+  display: block;
+  margin: auto;
+}
+h3 {
+  text-align: center;
+  font-size: 1em;
+  background-color: #0F0A0A;
+  margin: auto;
+  margin-bottom: 0.45em;
+  
+}
+a {
+  color: #960935;
+}
+ul {
+  margin: 0;
+  background-color: #0F0A0A;
+  padding-bottom: 5%;
+  list-style-type: none;
+}
+li {
+  margin-top: 0.90em;
+  position: relative;
+}
+.videocorneta {
+  background:url('../img/playicon.png') left center no-repeat;
+  display:inline-block;
+  width: 185px;
+  height: 100%;
+  position: absolute;
+  top: 5%;
+  left: 34%
+}
+
+.masnoticias {
+  width: 100%;
+  background-color: #ff1f64;
+  color: black;
+  margin-top: 0;
+  padding-top: rem-calc(5);
+  padding-bottom: rem-calc(5);
+}
+}
+
+
+/******************************************************************
+ * CONTENIDOS                                                  
+ *******************************************************************/
+#contenidos {
+display: block;
+background-color: #060009;
+margin-top: 4%;
+}
+#titulonoticias {
+color: #641a7a;
+font-family: $alegreya;
+font-weight: 800;
+background: black;
+font-size: rem-calc(62);
+line-height: rem-calc(60);
+letter-spacing: rem-calc(2);
+margin-top: 0;
+}
+.fechacont {
+  display: block;
+  float: left;
+  margin-right: 0.5em;
+  font-size: 14px;
+  color: #DFDFDF;
+  font-weight: bold;
+}
+.contprincipal {
+  margin-bottom: 1em;
+  h3 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    line-height: 1em;
+    word-spacing: -0.1em;
+    margin-bottom: 7px;
+    margin-top: -5px;
+  }
+  .contcategory {
+    font-family: $century;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin: 0;
+    display: inline-block;
+    color: #7d7d7d;
+  }
+  p {
+    font-family: $sans-serif;
+    text-align: justify;
+    margin: 0px;
+    line-height: 1.2em;
+    color: #7d7d7d;
+  }
+  .entry-content img {
+  }
+}
+.contmas {
+  
+  h3 {
+    text-transform: uppercase;
+    font-size: 1em;
+    line-height: 1em;
+    word-spacing: -0.1em;
+    margin-bottom: 2px;
+    margin-top: 1px;
+    text-align: justify;
+  }
+  span {
+    font-family: $sans-serif;
+    text-align: justify;
+    margin-right: 5px;
+    line-height: 1.2em;
+  }
+}
+.masnoticias {
+  display: block;
+  background: #492155;
+  color: black;
+  font-size: 1em;
+  font-family: $century;
+  margin-top: 1em;
+  font-weight: bold;
+  padding-left: 3em;
+  padding-right: 1em;
+  float: right;
+  
+}
+
+
+/******************************************************************
+ SINGLE EVENTS SINGLE LOCATION
+ ******************************************************************/
+.single-event, .single-location {
+  p {
+    font-family: $sans-serif;
+  }
+  
+  .article-header {
+    font-family: $century;
+    .fecha_single, .barrio_single {
+      color: #64ADE6;
+      font-size: rem-calc(28);
+      margin-right: 2%;
+      text-transform:capitalize;
+      word-spacing: -0.15em;
+      display: inline-block;
+      font-size: rem-calc(38);
+    }
+    .barrio_single {
+      color: #E66464;
+    }
+    .event-post-type-title, .location-post-type-title {
+      display: block;
+      margin: 0% 0% 0% 0%;
+      background-color: #0E0D0D;
+      color: #FFFFFF;
+      line-height: rem-calc(40);
+      font-size: rem-calc(37);
+    }
+    
+    .location_single, .ciudad_single { 
+      color: #AFACA2;
+      font-size: 1.3em;
+    }
+    .ciudad_single {
+      color: #AFACA2;
+      font-size: 1.1em;
+    }
+    .hora_single, .address_single { 
+      color: #64ADE6;
+      font-size: 1.3em;
+      display: inline-block;
+    }
+    
+    .address_single {
+      color: #63AA55;
+      font-size: 1.1em;
+    }
+    
+  }
+  .attachment-imagen-single {
+    display: block;
+    margin: auto;
+    margin-left: rem-calc(20);
+  }
+  #descripcion_evento {
+  text-align: justify;
+  
+  }
+  .em-location-map-container {
+    float: right;
+    display: block;
+  }
+  
+  #comollegar {
+  display: block;
+  h3 {
+    display: block;
+    margin: 2% 0% 2% 0%;
+    background-color: #0E0D0D;
+    color: #BE3333;
+    line-height: 1.2em;
+    font-size: 1.3em;
+  }
+  }
+  
+  #mapa {
+  display: block;
+  height: 325px;
+  }
+  .direccion_single { 
+    color: #b9b261;
+    font-size: 0.75em;
+    margin-left: 1em;
+  }
+  .em-map-balloon-content {
+    font-family: $century !important;
+    font-size: rem-calc(12) !important;
+  }
+}
+
+#titulo_proximos {
+width: 100%;
+display: block;
+background-color: rgb(25, 7, 58);
+font-family: $alegreya;
+display: block;
+font-weight: 800;
+font-size: 1.5rem;
+word-spacing: 1rem;
+color: #FCF0F0;
+line-height: 1.5rem;
+margin-top: -0.5rem;
+}
+
+/******************************************************************
+ * SE VIENE BUSCAR
+ ******************************************************************/
+#seviene_buscar {
+font-family: $century;
+height: auto;
+/*max-height: 450px; 
+ o *verflow-y: scroll;
+ */
+h2 {
+  display: block;
+  width: 20%;
+  background-color: #020A33;
+  font-size: 1em;
+  font-weight:900;
+  margin-bottom: 0em;
+  padding: 0.10em;
+}
+table {
+  width: 99%;
+  border-top: 4px solid #020A33;	
+}
+}
+.tablaeventos {
+  table {
+    display: table;
+    border-collapse: collapse;
+  }
+  tr {
+    border-width: 2px 0px 0px 0px;
+    border-style: solid;
+    border-color: #020A33;
+  }
+  td {
+  }
+  .col_fecha {
+    width: 13%;
+    color: #A22F2F;
+  }
+  .col_nombre {
+    width: 65%;
+  }
+  .col_location {
+    a {
+      font-size: 0.9em;
+      color: gray;
+    }
+  }
+}
+
+div.css-search {
+  background: #131212;
+  border: 1px solid black;
+  border-radius: 0px;
+  padding: 5px;
+  min-height: 40px;
+  position: relative;
+  font-family: $century;
+}
+
+div.css-search div.em-search-text { margin:0px; padding-left:0px; background:none; }	
+div.css-search input.em-search-text, div.css-search input.em-search-geo {
+  width: 80%;
+  font-size: 16px;
+  font-family: $alegreya;
+  line-height: 16px;
+  padding: 8px;
+  border: none;
+  outline: none !important;
+  color: #d8002f;
+  text-overflow: ellipsis;
+  background-color: #131212;
+  display: inline-block;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: none;
+}
+
+
+div.css-search div.em-search-main .em-search-submit {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  background: none !important;
+  background-color: none;
+  border-radius: 0px;
+  border: none;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  padding: 8px 10px;
+  text-decoration: none;
+  text-shadow: none;
+  line-height: 16px;
+  box-shadow: none;
+}
+
+div.css-search div.em-search-main .em-search-submit:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #C4DB99), color-stop(1, #A4C48A) );
+  background:-moz-linear-gradient( center top, #C4DB99 5%, #A4C48A 100% );
+  background:-ms-linear-gradient(top, #C4DB99, #A4C48A);
+  background:-o-linear-gradient(top, #C4DB99, #A4C48A);
+  background:linear-gradient(top, #C4DB99, #A4C48A);
+  background-color:#A4C48A;
+}
+
+div.css-search div.em-search-advanced label {
+  display: block;
+  float: left;
+  min-width: 100px;
+  font-family: $century !important;
+}
+
+div.em-search-advanced {
+  input {
+    color: #b9b261;
+    width: 100%;
+    background-color: #0f0f0f;
+    border: none;
+  }
+  select {
+    color: #b9b261;
+    width: 100%;
+    background: none;
+    background-color: #0f0f0f;
+    border: none;
+  }
+}
+/******************************************************************
+ B *uscar Boliches*
+ ******************************************************************/
+
+#buscar_boliches {
+font-family: $century;
+height: auto;
+/*max-height: 450px; 
+ * o *verflow-y: scroll;
+ */
+h2 {
+  display: block;
+  width: 20%;
+  background-color: #020A33;
+  font-size: 1em;
+  font-weight:900;
+  margin-bottom: 0em;
+  padding: 0.10em;
+}
+table {
+  width: 99%;	
+}
+}
+.tablaboliches {
+  img {
+    margin: 0.5em 0 0.5em 0;
+  }
+  table {
+    display: table;
+    border-collapse: collapse;
+  }
+  tr {
+    border-width: 2px 0px 0px 0px;
+    border-style: solid;
+    border-color: #020A33;
+  }
+  td {
+    color: gray;
+  }
+  .col_fecha {
+    width: 13%;
+    color: #A22F2F;
+  }
+  .col_nombre_boliche {
+    width: 20%;
+  }
+  .col_location {
+    a {
+      font-size: 0.9em;
+      color: gray;
+    }
+  }
+}
+
+
+/******************************************************************
+ * SUBPAGINAS FIESTAS Y TOQUES
+ ******************************************************************/
+
+.tablaseviene {
+  table {
+    display: table;
+    border-collapse: collapse;
+  }
+  tr {
+    border-width: 2px 0px 0px 0px;
+    border-style: solid;
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+}
+
+.col_fecha {
+  width: 12%;
+  color: white;
+  background-color: #0F0A0A;
+  font-family: $alegreya;
+  font-size: rem-calc(17);
+}
+.col_nombre {
+  width: 40%;
+}
+.col_imagen {
+  width: 30%;
+}
+.col_location {
+  a {
+    font-size: 0.9em;
+    color: gray;
+  }
+}
+
+
+
+/******************************************************************
+ * SINGLE DESTACADOS y DESTACADOS
+ ******************************************************************/
+/* Agregados Destaques y footer*/
+
+
+
+.caja img {
+  position: absolute;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.caja .caption {
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.caja .simple-caption {
+  height: 70px;
+  width: 95%;
+  display: block;
+  bottom: -70px;
+  text-align: center;
+}
+
+.caja:hover .simple-caption {
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.caja {
+  overflow: hidden !important;
+  height: 180px !important;
+}
+
+span.caption.simple-caption a p {
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.category-destacados {
+  h2 a {
+    font-family: $alegreya;
+    display: block !important;
+    background-color: #0E0D0D;
+    font-weight: 800;
+    font-size: rem-calc(24);
+    line-height: rem-calc(24);
+    margin: 0;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .index-card {
+    margin-bottom: rem-calc(10);
+  }
+  
+}
+
+.attachment-single-small {
+  float: right;
+  margin: 0.3em 0 1em 0.3em !important;
+}
+.single-title {
+  font-size: 2em;
+  margin: 0em;
+  color:#b9b261;
+}
+
+.single_title {
+  font-family: $alegreya;
+  display: block !important;
+  background-color: #0E0D0D;
+  font-weight: 800;
+  font-size: rem-calc(36);
+  line-height: rem-calc(36);
+  margin: 0;
+  color: white;
+  display: inline-block;
+}
+.single {
+  .vcard {
+    font-size: 1em;
+    margin-top: 0em;
+    font-family: $century;
+  }
+  
+}
+
+
+/******************************************************************
+ * ARCHIVE
+ ******************************************************************/
+
+.vcard {
+  margin-bottom: 0;
+}
+
+.attachment-archive-small {
+  float: left;
+  margin-right: 1.5%;
+}
+
+.index-card {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.archive h2 {
+  font-family: $alegreya;
+  font-size: rem-calc(25);
+}
+
+.archive p {
+  color: grey;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+/******************************************************************
+ * Pagina Cornetazos
+ ******************************************************************/
+
+.category-cornetazos .videocorneta {
+background: url("../img/playicon.png") center center no-repeat;
+display: block;
+width: 58px;
+height: 58px;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+position: absolute;
+margin: auto;
+width: 100%;
+}
+
+
+
+.category-cornetazos {
+  text-align: center;
+}
+.category-cornetazos .entry-content {
+  
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+
+
+header.cornetahead a {
+  color: white;
+  text-decoration: none;
+}
+
+header.cornetahead h2 {
+  background-color: #4d4d0c;
+  margin-bottom: -10px;
+  font-weight: bold;
+  border-style: none;
+  color: #ff6bff;
+  background-color: #424707;
+}
+
+/******************************************************************
+ E *nvia tu evento                                                    *
+ ******************************************************************/
+.em-location-data-country {
+  display: none;
+}
+.css-event-form {
+  width: 90%;
+  font-family: $century;
+  color: #2e46ca;
+  input {
+    color: #b9b261;
+    background-color: #0f0f0f;
+    border: 2px solid;
+    border-color: #5aa802;
+  }
+  input[type="submit"] {
+    padding: rem-calc(15);
+  }
+  h3 {
+    font-family: $alegreya;
+    display: block;
+    background-color: #515522;
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  #event-owner-name, #event-owner-email  {
+  display: inline-block;
+  width: 40%;
+ }
+ .event-form-submitter {
+   label {
+     font-size: 100%;
+     font-family: $century;
+     color: #2e46ca;
+     display: inline-block;
+   }
+ }
+  #event-owner-name {
+  margin-left: 13%;
+  }
+  #event-owner-email {
+  margin-left: 1%;
+  }
+  #event-form #event-name  {
+  width: 65%;
+  display: inline-block;
+  }
+  .em-date-input-loc {
+    width: 27%;
+    display: inline-block;
+  }
+  #start-time, #end-time {
+  width: 12%;
+  display: inline-block;
+  }
+  #em-location-data table.em-location-data {
+  width: 81%;
+  }
+  #em-location-data .em-location-map-container {
+  width: 79%;
+  }
+}
+
+
+.event-form-where {
+  th {
+    color: #0CD39B;
+  }
+}
+
+#em-location-search-tip {
+color: gray;
+}
+/******************************************************************
+ * FOOTER
+ ******************************************************************/
+
+
+#searchbox
+{
+  background-color: #eaf8fc;
+  background-image: linear-gradient(#fff, #d4e8ec);
+  border-radius: 35px;    
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c4d9df #a4c3ca #83afb7;            
+  width: 500px;
+  height: 35px;
+  padding: 10px;
+  margin: 100px auto 50px;
+  overflow: hidden; /* Clear floats */
+}
+
+
+//COMMENTS
+#respond {
+  margin-top: 5%;
+}
+#titulo_comentario {
+width: 100%;
+display: block;
+background-color: maroon;
+font-family: $alegreya;
+display: block;
+font-weight: 800;
+font-size: 1.5rem;
+word-spacing: 1rem;
+color: #FCF0F0;
+line-height: 1.5rem;
+margin-top: -0.5rem;
+}
+
+
+
+//tabla
+#proba {
+display: none;
+}
+
+
+
+.link_location {
+  font-variant: normal;
+  font-size: rem-calc(14);
+  color: white;
+  text-transform: uppercase;
+}
+
+
+#proba_wrapper, #hoytable_wrapper, #fiestatable_wrapper {
+table thead tr th,
+table thead tr td,
+table tfoot tr th,
+table tfoot tr td {
+  padding: 0.5rem 0.5rem 0.5rem;
+  font-size: rem-calc(16);
+  background-color: rgb(12, 11, 11);
+  font-family: $alegreya;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
+
+#proba, .restotablas {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+text-overflow: ellipsis;
+}
+
+table.dataTable tbody tr {
+  background-color: rgb(12, 11, 11);
+}
+
+table.dataTable.hover tbody tr:hover,
+table.dataTable.hover tbody tr.odd:hover,
+table.dataTable.hover tbody tr.even:hover, table.dataTable.display tbody tr:hover,
+table.dataTable.display tbody tr.odd:hover,
+table.dataTable.display tbody tr.even:hover {
+  background-color: rgb(12, 11, 11);
+}
+
+table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  background-color: rgb(12, 11, 11);
+}
+.group td {
+  background-color:black !important;
+  color: rgb(19, 190, 19);
+  text-transform: uppercase;
+  font-size: rem-calc(16);
+  font-family: $alegreya;
+}
+.regiontabla {
+  color: white;
+  text-transform: uppercase;
+  font-size: rem-calc(13);
+}
+
+}
+
+
+
+#proba_filter, #hoytable_filter, #fiestatable_filter {
+background-color: rgb(12, 11, 11);
+margin-bottom: 4%;
+width: 100%;
+	input[type="search"] {
+	width: 70%;
+	float: left;
+	font-size: 16px;
+	font-family: $alegreya;
+	line-height: 16px;
+	padding: 8px;
+	outline: none !important;
+	color: grey;
+	text-overflow: ellipsis;
+	background-color: white;
+	display: inline-block;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	margin-bottom: 10px;
+	margin-top: 8px;
+	}
+label {
+}
+.buscatabla {
+  color: rgb(19, 190, 19);
+  font-weight: bold;
+  font-family: $alegreya;
+  font-size: rem-calc(20);
+  float: left;
+  padding: 15px;
+  padding-right: 6px;
+}
+}
+
+/*Menu */
+
+#menu-item-5797 a {
+padding-right: 0px;
+}
+
+#menu-item-5800 a {
+padding-left: 10px;
+}
+
+/*Mundial */
+.mundial2014  th {
+  background-color: #34ccfe !important;
+  color: black !important;
+}
+
+.mundial2014#fiestatable_filter .buscatabla {
+  color: #34ccfe !important;
+}
+
+.menu-item-mundial-2014 a {
+  color: black !important; 
+  background-color: #34ccfe !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.linklist {
+  color: #a49c48 !important;
+}
+
+/*Barra */
+.top-bar-section ul li > a {
+  display: block;
+  width: 100%;
+  color: #ab7f32;
+  padding: 12px 0 12px 0;
+  padding-left: 20px;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background: black;
+}

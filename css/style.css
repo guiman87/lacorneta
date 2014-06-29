@@ -1,0 +1,1970 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+/* Welcome and glad you are using Reverie.
+ * This is the main stylesheet loaded by default.
+ * Edit the file and have fun.
+ * http://themefortress.com/reverie */
+/* line 287, ../bower_components/foundation/scss/foundation/components/_global.scss */
+meta.foundation-mq-small {
+  font-family: "/only screen and (max-width: 40em)/";
+  width: 0em;
+}
+
+/* line 292, ../bower_components/foundation/scss/foundation/components/_global.scss */
+meta.foundation-mq-medium {
+  font-family: "/only screen and (min-width:40.063em) and (max-width:64em)/";
+  width: 40.063em;
+}
+
+/* line 297, ../bower_components/foundation/scss/foundation/components/_global.scss */
+meta.foundation-mq-large {
+  font-family: "/only screen and (min-width:64.063em)/";
+  width: 64.063em;
+}
+
+/* line 302, ../bower_components/foundation/scss/foundation/components/_global.scss */
+meta.foundation-mq-xlarge {
+  font-family: "/only screen and (min-width:90.063em)/";
+  width: 90.063em;
+}
+
+/* line 307, ../bower_components/foundation/scss/foundation/components/_global.scss */
+meta.foundation-mq-xxlarge {
+  font-family: "/only screen and (min-width:120.063em)/";
+  width: 120.063em;
+}
+
+/* line 317, ../bower_components/foundation/scss/foundation/components/_global.scss */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 322, ../bower_components/foundation/scss/foundation/components/_global.scss */
+html,
+body {
+  font-size: 100%;
+}
+
+/* line 325, ../bower_components/foundation/scss/foundation/components/_global.scss */
+body {
+  background: black;
+  color: #b9b261;
+  padding: 0;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default;
+}
+
+/* line 338, ../bower_components/foundation/scss/foundation/components/_global.scss */
+a:hover {
+  cursor: pointer;
+}
+
+/* line 343, ../bower_components/foundation/scss/foundation/components/_global.scss */
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 346, ../bower_components/foundation/scss/foundation/components/_global.scss */
+object,
+embed {
+  height: 100%;
+}
+
+/* line 347, ../bower_components/foundation/scss/foundation/components/_global.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 353, ../bower_components/foundation/scss/foundation/components/_global.scss */
+#map_canvas img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object {
+  max-width: none !important;
+}
+
+/* line 358, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.left {
+  float: left !important;
+}
+
+/* line 359, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.right {
+  float: right !important;
+}
+
+/* line 360, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 165, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 166, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 361, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.text-left {
+  text-align: left !important;
+}
+
+/* line 362, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.text-right {
+  text-align: right !important;
+}
+
+/* line 363, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.text-center {
+  text-align: center !important;
+}
+
+/* line 364, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.text-justify {
+  text-align: justify !important;
+}
+
+/* line 365, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.hidee {
+  display: none;
+}
+
+/* line 371, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 374, ../bower_components/foundation/scss/foundation/components/_global.scss */
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 384, ../bower_components/foundation/scss/foundation/components/_global.scss */
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+/* line 387, ../bower_components/foundation/scss/foundation/components/_global.scss */
+select {
+  width: 100%;
+}
+
+/* line 132, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination {
+  display: inline-block;
+  height: 1.5rem;
+  margin-left: 0;
+}
+/* line 95, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination li {
+  height: 1.5rem;
+  color: #222222;
+  font-size: 0.875rem;
+  margin-left: 0.3125rem;
+}
+/* line 101, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination li a {
+  display: block;
+  padding: 0.0625rem 0.625rem 0.0625rem;
+  color: #999999;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 109, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination li:hover a,
+ul.pagination li a:focus {
+  background: #e6e6e6;
+}
+/* line 47, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination li.unavailable a {
+  cursor: default;
+  color: #999999;
+}
+/* line 52, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
+  background: transparent;
+}
+/* line 60, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination li.current a {
+  background: #a49c48;
+  color: white;
+  font-weight: bold;
+  cursor: default;
+}
+/* line 67, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination li.current a:hover, ul.pagination li.current a:focus {
+  background: #a49c48;
+}
+/* line 119, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination li {
+  float: left;
+  display: block;
+}
+
+/* Pagination centred wrapper */
+/* line 137, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+.pagination-centered {
+  text-align: center;
+}
+/* line 119, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+.pagination-centered ul.pagination li {
+  float: none;
+  display: inline-block;
+}
+
+/* Start to customize Reverie */
+/* line 26, ../scss/style.scss */
+a, a:visited, a:hover, a:visited:hover {
+  -webkit-transition: all 100ms linear;
+  -moz-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+/* line 31, ../scss/style.scss */
+figure {
+  margin: 0 auto 1.25rem;
+}
+
+/* line 36, ../scss/style.scss */
+figure img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 40, ../scss/style.scss */
+img.alignright {
+  float: right;
+  margin: 0 0 18px 18px;
+}
+
+/* line 45, ../scss/style.scss */
+img.alignleft {
+  float: left;
+  margin: 0 18px 18px 0;
+}
+
+/* line 50, ../scss/style.scss */
+img.aligncenter {
+  display: block;
+  margin: 18px auto;
+}
+
+/* line 57, ../scss/style.scss */
+.gallery dt, .gallery dl {
+  display: inline-block;
+}
+/* line 60, ../scss/style.scss */
+.gallery dl {
+  margin-left: 0.5625rem;
+  margin-right: 0.5625rem;
+}
+
+/* line 67, ../scss/style.scss */
+figure.figure {
+  margin: 0 auto;
+  display: table;
+}
+/* line 70, ../scss/style.scss */
+figure.figure figcaption {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-style: italic;
+  padding: 8px 10px;
+  color: #999;
+  margin-bottom: 1.25rem;
+  display: table-caption;
+  caption-side: bottom;
+}
+
+/* line 82, ../scss/style.scss */
+figure.alignright.figure {
+  float: right;
+  margin: 0 0 18px 18px;
+}
+
+/* line 87, ../scss/style.scss */
+figure.alignleft.figure {
+  float: left;
+  margin: 0 18px 18px 0;
+}
+
+/* line 92, ../scss/style.scss */
+.footer-widget {
+  background-color: black;
+}
+
+/* line 96, ../scss/style.scss */
+body > header.contain-to-grid {
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+  padding-bottom: 0;
+  margin-top: 2.375rem;
+}
+
+/* line 103, ../scss/style.scss */
+#content {
+  background-color: black;
+}
+
+/* line 106, ../scss/style.scss */
+.container {
+  margin-top: 1%;
+}
+
+/* line 110, ../scss/style.scss */
+.home .container {
+  margin-top: 3%;
+}
+
+/* line 114, ../scss/style.scss */
+.index-card {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* line 121, ../scss/style.scss */
+span.author,
+time {
+  font-size: 0.9375rem;
+  color: #999;
+}
+/* line 124, ../scss/style.scss */
+span.author a,
+time a {
+  color: #999;
+  font-weight: bold;
+}
+/* line 127, ../scss/style.scss */
+span.author a:hover, span.author a:focus,
+time a:hover,
+time a:focus {
+  color: #b9b261;
+}
+
+/* line 136, ../scss/style.scss */
+.entry-author {
+  background-color: black;
+  border: none;
+  padding: 3.125rem 5rem;
+  margin: 3.125rem -0.9375rem;
+}
+/* line 141, ../scss/style.scss */
+.entry-author .avatar {
+  margin-right: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+/* line 146, ../scss/style.scss */
+.entry-author h4 a {
+  color: #999;
+}
+/* line 148, ../scss/style.scss */
+.entry-author h4 a:hover, .entry-author h4 a:focus {
+  color: #b9b261;
+}
+/* line 153, ../scss/style.scss */
+.entry-author p {
+  color: #bbb;
+}
+
+/* line 158, ../scss/style.scss */
+.post strong, b {
+  color: #99cc00;
+}
+
+/* line 159, ../scss/style.scss */
+.post a {
+  color: #888888;
+  text-decoration: underline;
+}
+
+/* line 160, ../scss/style.scss */
+.post a:hover {
+  color: #b9b261 !important;
+  text-decoration: underline;
+}
+
+/* line 162, ../scss/style.scss */
+.post header,
+.page header {
+  margin-bottom: 0;
+}
+
+/* line 166, ../scss/style.scss */
+.entry-tags {
+  color: #999;
+  font-size: 0.9375rem;
+}
+/* line 169, ../scss/style.scss */
+.entry-tags a {
+  color: #999;
+}
+/* line 171, ../scss/style.scss */
+.entry-tags a:hover, .entry-tags a:focus {
+  color: #b9b261;
+}
+
+/* line 179, ../scss/style.scss */
+.page-numbers {
+  color: #999;
+  display: inline-block;
+  height: 1.5rem;
+  margin-left: 0;
+}
+/* line 95, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+.page-numbers li {
+  height: 1.5rem;
+  color: #222222;
+  font-size: 0.875rem;
+  margin-left: 0.3125rem;
+}
+/* line 101, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+.page-numbers li a {
+  display: block;
+  padding: 0.0625rem 0.625rem 0.0625rem;
+  color: #999999;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 109, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+.page-numbers li:hover a,
+.page-numbers li a:focus {
+  background: #e6e6e6;
+}
+/* line 47, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+.page-numbers li.unavailable a {
+  cursor: default;
+  color: #999999;
+}
+/* line 52, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+.page-numbers li.unavailable:hover a, .page-numbers li.unavailable a:focus {
+  background: transparent;
+}
+/* line 60, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+.page-numbers li.current a {
+  background: #a49c48;
+  color: white;
+  font-weight: bold;
+  cursor: default;
+}
+/* line 67, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+.page-numbers li.current a:hover, .page-numbers li.current a:focus {
+  background: #a49c48;
+}
+/* line 119, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+.page-numbers li {
+  float: left;
+  display: block;
+}
+
+/* line 184, ../scss/style.scss */
+.pagination-centered ul.page-numbers li {
+  float: none;
+  display: inline-block;
+}
+
+/* line 189, ../scss/style.scss */
+.page-numbers li span.current {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 193, ../scss/style.scss */
+.page-numbers li {
+  margin-left: 0.5rem;
+}
+
+/* line 200, ../scss/style.scss */
+.page-numbers li span:hover a,
+.page-numbers li span a:focus {
+  background: #e6e6e6;
+}
+/* line 203, ../scss/style.scss */
+.page-numbers li span.current {
+  background: #a49c48;
+  padding: 0.0625rem 0.625rem 0.0625rem;
+  color: white;
+  font-weight: bold;
+  cursor: default;
+}
+
+/* line 212, ../scss/style.scss */
+.avatar {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+}
+
+/* line 218, ../scss/style.scss */
+ol.commentlist {
+  margin-left: 0;
+  margin-top: 2em;
+}
+/* line 221, ../scss/style.scss */
+ol.commentlist p {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+/* line 225, ../scss/style.scss */
+ol.commentlist ul.children {
+  margin-left: 4rem;
+}
+/* line 228, ../scss/style.scss */
+ol.commentlist li {
+  list-style: none;
+  margin-bottom: 2em;
+}
+/* line 232, ../scss/style.scss */
+ol.commentlist li .comment-author img {
+  float: left;
+  margin: 0 1em 0 0;
+}
+/* line 236, ../scss/style.scss */
+ol.commentlist li .author-meta {
+  display: inline-block;
+}
+/* line 238, ../scss/style.scss */
+ol.commentlist li .author-meta cite.fn {
+  font-style: normal;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+/* line 243, ../scss/style.scss */
+ol.commentlist li .author-meta time a {
+  color: #ccc;
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+}
+/* line 248, ../scss/style.scss */
+ol.commentlist li .author-meta .comment-edit-link {
+  color: #bbb;
+  font-size: 0.875rem;
+}
+/* line 253, ../scss/style.scss */
+ol.commentlist li section.comment {
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+/* line 256, ../scss/style.scss */
+ol.commentlist li section.comment a.comment-reply-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #bbb;
+}
+/* line 260, ../scss/style.scss */
+ol.commentlist li section.comment a.comment-reply-link:hover, ol.commentlist li section.comment a.comment-reply-link:focus {
+  color: #b9b261;
+}
+
+/* line 271, ../scss/style.scss */
+#sidebar {
+  margin-top: 1.25rem;
+}
+
+/* line 276, ../scss/style.scss */
+#sidebar .panel, .footer-widget .panel {
+  border: none;
+  background-color: black;
+  padding: 0;
+}
+/* line 280, ../scss/style.scss */
+#sidebar .panel a, .footer-widget .panel a {
+  color: #999;
+  font-size: 0.9375rem;
+}
+/* line 283, ../scss/style.scss */
+#sidebar .panel a:hover, #sidebar .panel a:focus, .footer-widget .panel a:hover, .footer-widget .panel a:focus {
+  color: #b9b261;
+}
+/* line 288, ../scss/style.scss */
+#sidebar ul, .footer-widget ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 292, ../scss/style.scss */
+#sidebar .widget, .footer-widget .widget {
+  margin-bottom: 0.625rem;
+}
+/* line 294, ../scss/style.scss */
+#sidebar .widget h4, .footer-widget .widget h4 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  color: #888;
+  font-weight: 600;
+}
+
+/* line 309, ../scss/style.scss */
+footer.full-width {
+  background-color: #0c0b0b;
+  border-top: 12px solid #362C2C;
+  padding-top: 2rem;
+  margin-top: 2.8125rem;
+}
+/* line 314, ../scss/style.scss */
+footer.full-width p {
+  font-size: 0.875rem;
+}
+/* line 317, ../scss/style.scss */
+footer.full-width a {
+  color: #666;
+  font-size: 0.9375rem;
+}
+/* line 320, ../scss/style.scss */
+footer.full-width a:hover, footer.full-width a:focus {
+  color: #b9b261;
+}
+/* line 324, ../scss/style.scss */
+footer.full-width .love-reverie {
+  border-top: 1px solid #ccc;
+  padding-top: 1.5rem;
+}
+
+@media only screen {
+  /* line 332, ../scss/style.scss */
+  .entry-author .avatar {
+    margin-bottom: 1.25rem;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 339, ../scss/style.scss */
+  #content {
+    padding: 1.25rem;
+  }
+
+  /* line 342, ../scss/style.scss */
+  .entry-author {
+    margin: 3.125rem -1.25rem;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 348, ../scss/style.scss */
+  #sidebar {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 1.875rem;
+  }
+
+  /* line 353, ../scss/style.scss */
+  .footer-widget {
+    margin-top: 3rem;
+    padding-top: 2rem;
+  }
+
+  /* line 357, ../scss/style.scss */
+  .single-event .attachment-imagen-single, .single-location .attachment-imagen-single {
+    display: block;
+    float: right;
+    margin: 0 0 1% 2%;
+    max-width: 50%;
+  }
+
+  /* line 363, ../scss/style.scss */
+  .name img {
+    margin-top: 0.6875rem;
+  }
+
+  /* line 367, ../scss/style.scss */
+  .category-cornetazos .entry-content img {
+    min-width: 500px;
+  }
+
+  /* line 372, ../scss/style.scss */
+  .cornetahead {
+    max-width: 500px;
+  }
+
+  /* line 376, ../scss/style.scss */
+  .attachment-single-cornetazo img {
+    display: inline-block;
+  }
+}
+/* line 382, ../scss/style.scss */
+.arcoiris {
+  background-image: url("../img/linearcoiris.png") !important;
+  background-repeat: repeat-y;
+  background-position: 361px 0%;
+  height: 3px;
+  width: 97%;
+  position: absolute;
+  top: 66px;
+  right: 135px;
+}
+
+/* line 394, ../scss/style.scss */
+#pizarra {
+  margin-top: 3.125rem;
+}
+
+/* line 399, ../scss/style.scss */
+#hoy .tabs dd > a {
+  padding-right: 45%;
+  padding-left: 6%;
+  padding-bottom: 0%;
+  padding-top: 2px;
+  background: #161515;
+  color: #ab7f32;
+  line-height: 1.3125rem;
+  font-weight: bold;
+}
+
+/* line 410, ../scss/style.scss */
+#hoy .tabs dd {
+  width: 50%;
+}
+
+/* line 414, ../scss/style.scss */
+#hoy .tabs .tablinkinterior.active a {
+  background: #FF8500;
+  color: #000000;
+}
+
+/* line 419, ../scss/style.scss */
+#hoy .tabs .tablinkmontevideo.active a {
+  background-color: #5AA802;
+  color: black;
+}
+
+/* line 424, ../scss/style.scss */
+#hoy h1 {
+  margin-bottom: 0;
+}
+
+/* line 427, ../scss/style.scss */
+#titulohoy {
+  width: 100%;
+  display: block;
+  font-family: "Alegreya Sans SC", sans-serif;
+  display: block;
+  font-weight: 800;
+  font-size: 2.75rem;
+  word-spacing: 1rem;
+  color: #98ff28;
+  line-height: 3rem;
+}
+
+/* line 439, ../scss/style.scss */
+#hoy, #diapositivas {
+  margin-top: 0;
+}
+
+/* line 443, ../scss/style.scss */
+span.hoytime {
+  color: #999999;
+  font-weight: bold;
+}
+
+/* line 448, ../scss/style.scss */
+span.hoylocation {
+  font-variant: small-caps;
+  font-size: 0.9em;
+  color: #D5514D;
+}
+
+/* line 456, ../scss/style.scss */
+#accordioninterior .ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default, .ui-widget-content {
+  border-color: #FF8500;
+}
+
+/******************************************************************
+ BUSCADOR S *E VIENE y Tablaeventos
+ ******************************************************************/
+/* line 463, ../scss/style.scss */
+#titulobusca {
+  width: 100%;
+  display: block;
+  font-family: "Alegreya Sans SC", sans-serif;
+  display: block;
+  font-weight: 800;
+  font-size: 1.5rem;
+  word-spacing: 1rem;
+  color: #FCF0F0;
+  line-height: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+/* line 477, ../scss/style.scss */
+#seviene {
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 490px;
+}
+/* line 482, ../scss/style.scss */
+#seviene h2 {
+  display: block;
+  width: 20%;
+  font-size: 1em;
+  font-weight: 900;
+  margin-bottom: 0em;
+  padding: 0.10em;
+  color: #7d7d7d;
+}
+/* line 491, ../scss/style.scss */
+#seviene table {
+  width: 99%;
+  border-top: 4px solid #172674;
+}
+
+/* line 499, ../scss/style.scss */
+#panel3-2 h2 {
+  display: block;
+  width: 20%;
+  background-color: #A3268A !important;
+  color: #FFFFFF;
+}
+/* line 505, ../scss/style.scss */
+#panel3-2 table {
+  width: 99%;
+  border-top: 4px solid #A3268A;
+}
+/* line 510, ../scss/style.scss */
+#panel3-2 .col_nombre {
+  width: 50%;
+}
+
+/* line 517, ../scss/style.scss */
+#panel3-1 h2 {
+  background-color: #172674;
+}
+
+/* line 523, ../scss/style.scss */
+#tabsseviene dd > a {
+  padding-right: 45%;
+  padding-left: 6%;
+  padding-bottom: 0%;
+  padding-top: 2px;
+  background: #161515;
+  color: #93149E;
+  line-height: 1.3125rem;
+  font-weight: bold;
+}
+
+/* line 534, ../scss/style.scss */
+#tabsseviene dd {
+  width: 50%;
+}
+
+/* line 538, ../scss/style.scss */
+#tabsseviene .tablinkinterior.active a {
+  background: #A3268A;
+  color: white;
+}
+
+/* line 543, ../scss/style.scss */
+#tabsseviene .tablinkmontevideo.active a {
+  background-color: #172674;
+  color: white;
+}
+
+/* line 551, ../scss/style.scss */
+.tablaeventos table {
+  display: table;
+  border-collapse: collapse;
+  background-color: black;
+  border: none;
+}
+/* line 557, ../scss/style.scss */
+.tablaeventos tr {
+  border-width: 2px 0px 0px 0px;
+  border-style: solid;
+  border-color: #020A33;
+  background-color: black;
+}
+/* line 563, ../scss/style.scss */
+.tablaeventos td {
+  background-color: black;
+}
+/* line 566, ../scss/style.scss */
+.tablaeventos .col_nombre {
+  width: 65%;
+  background-color: black;
+}
+/* line 571, ../scss/style.scss */
+.tablaeventos .col_state {
+  color: #A3268A;
+}
+/* line 576, ../scss/style.scss */
+.tablaeventos .col_location a {
+  font-size: 0.9em;
+  color: gray;
+  background-color: black;
+  font-variant: small-caps;
+}
+
+/* line 589, ../scss/style.scss */
+#tituloseviene {
+  width: 100%;
+  display: block;
+  font-family: "Alegreya Sans SC", sans-serif;
+  display: block;
+  font-weight: 800;
+  font-size: 2.75rem;
+  word-spacing: 1rem;
+  color: #1939e0;
+  line-height: 3rem;
+  margin-top: -0.5rem;
+}
+
+/*slider */
+/* line 610, ../scss/style.scss */
+.title_slider {
+  font-family: "Alegreya Sans SC", sans-serif;
+  display: block;
+  font-weight: 800;
+  font-size: 1.5625rem;
+  line-height: 1.375rem;
+  margin: 0;
+  color: white;
+  display: inline-block;
+}
+
+/* line 620, ../scss/style.scss */
+.locationevento {
+  font-family: "Alegreya Sans SC", sans-serif;
+  color: #d7db22;
+  font-size: 1.3125rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* line 628, ../scss/style.scss */
+.fechaeventoslide {
+  font-family: "Alegreya Sans SC", sans-serif;
+  color: white;
+  font-size: 1.3125rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 7px;
+}
+
+/* line 636, ../scss/style.scss */
+.orbit-progress {
+  display: none !important;
+}
+
+/******************************************************************
+ * CORNETAZOS
+ ******************************************************************/
+/* line 645, ../scss/style.scss */
+#titulocornetazos {
+  color: #ff1f64;
+  font-family: "Alegreya Sans SC", sans-serif;
+  margin-top: 12%;
+  font-size: 2.25rem;
+  margin-bottom: 0;
+  font-weight: 800;
+  line-height: 2.25rem;
+}
+
+/* line 656, ../scss/style.scss */
+#cornetazos img {
+  display: block;
+  margin: auto;
+}
+/* line 660, ../scss/style.scss */
+#cornetazos h3 {
+  text-align: center;
+  font-size: 1em;
+  background-color: #0F0A0A;
+  margin: auto;
+  margin-bottom: 0.45em;
+}
+/* line 668, ../scss/style.scss */
+#cornetazos a {
+  color: #960935;
+}
+/* line 671, ../scss/style.scss */
+#cornetazos ul {
+  margin: 0;
+  background-color: #0F0A0A;
+  padding-bottom: 5%;
+  list-style-type: none;
+}
+/* line 677, ../scss/style.scss */
+#cornetazos li {
+  margin-top: 0.90em;
+  position: relative;
+}
+/* line 681, ../scss/style.scss */
+#cornetazos .videocorneta {
+  background: url("../img/playicon.png") left center no-repeat;
+  display: inline-block;
+  width: 185px;
+  height: 100%;
+  position: absolute;
+  top: 5%;
+  left: 34%;
+}
+/* line 691, ../scss/style.scss */
+#cornetazos .masnoticias {
+  width: 100%;
+  background-color: #ff1f64;
+  color: black;
+  margin-top: 0;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+}
+
+/******************************************************************
+ * CONTENIDOS                                                  
+ *******************************************************************/
+/* line 705, ../scss/style.scss */
+#contenidos {
+  display: block;
+  background-color: #060009;
+  margin-top: 4%;
+}
+
+/* line 710, ../scss/style.scss */
+#titulonoticias {
+  color: #641a7a;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 800;
+  background: black;
+  font-size: 3.875rem;
+  line-height: 3.75rem;
+  letter-spacing: 0.125rem;
+  margin-top: 0;
+}
+
+/* line 720, ../scss/style.scss */
+.fechacont {
+  display: block;
+  float: left;
+  margin-right: 0.5em;
+  font-size: 14px;
+  color: #DFDFDF;
+  font-weight: bold;
+}
+
+/* line 728, ../scss/style.scss */
+.contprincipal {
+  margin-bottom: 1em;
+}
+/* line 730, ../scss/style.scss */
+.contprincipal h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  line-height: 1em;
+  word-spacing: -0.1em;
+  margin-bottom: 7px;
+  margin-top: -5px;
+}
+/* line 738, ../scss/style.scss */
+.contprincipal .contcategory {
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  margin: 0;
+  display: inline-block;
+  color: #7d7d7d;
+}
+/* line 746, ../scss/style.scss */
+.contprincipal p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: justify;
+  margin: 0px;
+  line-height: 1.2em;
+  color: #7d7d7d;
+}
+
+/* line 758, ../scss/style.scss */
+.contmas h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 1em;
+  word-spacing: -0.1em;
+  margin-bottom: 2px;
+  margin-top: 1px;
+  text-align: justify;
+}
+/* line 767, ../scss/style.scss */
+.contmas span {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: justify;
+  margin-right: 5px;
+  line-height: 1.2em;
+}
+
+/* line 774, ../scss/style.scss */
+.masnoticias {
+  display: block;
+  background: #492155;
+  color: black;
+  font-size: 1em;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  margin-top: 1em;
+  font-weight: bold;
+  padding-left: 3em;
+  padding-right: 1em;
+  float: right;
+}
+
+/******************************************************************
+ SINGLE EVENTS SINGLE LOCATION
+ ******************************************************************/
+/* line 793, ../scss/style.scss */
+.single-event p, .single-location p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 797, ../scss/style.scss */
+.single-event .article-header, .single-location .article-header {
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+/* line 799, ../scss/style.scss */
+.single-event .article-header .fecha_single, .single-event .article-header .barrio_single, .single-location .article-header .fecha_single, .single-location .article-header .barrio_single {
+  color: #64ADE6;
+  font-size: 1.75rem;
+  margin-right: 2%;
+  text-transform: capitalize;
+  word-spacing: -0.15em;
+  display: inline-block;
+  font-size: 2.375rem;
+}
+/* line 808, ../scss/style.scss */
+.single-event .article-header .barrio_single, .single-location .article-header .barrio_single {
+  color: #E66464;
+}
+/* line 811, ../scss/style.scss */
+.single-event .article-header .event-post-type-title, .single-event .article-header .location-post-type-title, .single-location .article-header .event-post-type-title, .single-location .article-header .location-post-type-title {
+  display: block;
+  margin: 0% 0% 0% 0%;
+  background-color: #0E0D0D;
+  color: #FFFFFF;
+  line-height: 2.5rem;
+  font-size: 2.3125rem;
+}
+/* line 820, ../scss/style.scss */
+.single-event .article-header .location_single, .single-event .article-header .ciudad_single, .single-location .article-header .location_single, .single-location .article-header .ciudad_single {
+  color: #AFACA2;
+  font-size: 1.3em;
+}
+/* line 824, ../scss/style.scss */
+.single-event .article-header .ciudad_single, .single-location .article-header .ciudad_single {
+  color: #AFACA2;
+  font-size: 1.1em;
+}
+/* line 828, ../scss/style.scss */
+.single-event .article-header .hora_single, .single-event .article-header .address_single, .single-location .article-header .hora_single, .single-location .article-header .address_single {
+  color: #64ADE6;
+  font-size: 1.3em;
+  display: inline-block;
+}
+/* line 834, ../scss/style.scss */
+.single-event .article-header .address_single, .single-location .article-header .address_single {
+  color: #63AA55;
+  font-size: 1.1em;
+}
+/* line 840, ../scss/style.scss */
+.single-event .attachment-imagen-single, .single-location .attachment-imagen-single {
+  display: block;
+  margin: auto;
+  margin-left: 1.25rem;
+}
+/* line 845, ../scss/style.scss */
+.single-event #descripcion_evento, .single-location #descripcion_evento {
+  text-align: justify;
+}
+/* line 849, ../scss/style.scss */
+.single-event .em-location-map-container, .single-location .em-location-map-container {
+  float: right;
+  display: block;
+}
+/* line 854, ../scss/style.scss */
+.single-event #comollegar, .single-location #comollegar {
+  display: block;
+}
+/* line 856, ../scss/style.scss */
+.single-event #comollegar h3, .single-location #comollegar h3 {
+  display: block;
+  margin: 2% 0% 2% 0%;
+  background-color: #0E0D0D;
+  color: #BE3333;
+  line-height: 1.2em;
+  font-size: 1.3em;
+}
+/* line 866, ../scss/style.scss */
+.single-event #mapa, .single-location #mapa {
+  display: block;
+  height: 325px;
+}
+/* line 870, ../scss/style.scss */
+.single-event .direccion_single, .single-location .direccion_single {
+  color: #b9b261;
+  font-size: 0.75em;
+  margin-left: 1em;
+}
+/* line 875, ../scss/style.scss */
+.single-event .em-map-balloon-content, .single-location .em-map-balloon-content {
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif !important;
+  font-size: 0.75rem !important;
+}
+
+/* line 881, ../scss/style.scss */
+#titulo_proximos {
+  width: 100%;
+  display: block;
+  background-color: #19073a;
+  font-family: "Alegreya Sans SC", sans-serif;
+  display: block;
+  font-weight: 800;
+  font-size: 1.5rem;
+  word-spacing: 1rem;
+  color: #FCF0F0;
+  line-height: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+/******************************************************************
+ * SE VIENE BUSCAR
+ ******************************************************************/
+/* line 898, ../scss/style.scss */
+#seviene_buscar {
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  height: auto;
+  /*max-height: 450px; 
+   o *verflow-y: scroll;
+   */
+}
+/* line 904, ../scss/style.scss */
+#seviene_buscar h2 {
+  display: block;
+  width: 20%;
+  background-color: #020A33;
+  font-size: 1em;
+  font-weight: 900;
+  margin-bottom: 0em;
+  padding: 0.10em;
+}
+/* line 913, ../scss/style.scss */
+#seviene_buscar table {
+  width: 99%;
+  border-top: 4px solid #020A33;
+}
+
+/* line 919, ../scss/style.scss */
+.tablaeventos table {
+  display: table;
+  border-collapse: collapse;
+}
+/* line 923, ../scss/style.scss */
+.tablaeventos tr {
+  border-width: 2px 0px 0px 0px;
+  border-style: solid;
+  border-color: #020A33;
+}
+/* line 930, ../scss/style.scss */
+.tablaeventos .col_fecha {
+  width: 13%;
+  color: #A22F2F;
+}
+/* line 934, ../scss/style.scss */
+.tablaeventos .col_nombre {
+  width: 65%;
+}
+/* line 938, ../scss/style.scss */
+.tablaeventos .col_location a {
+  font-size: 0.9em;
+  color: gray;
+}
+
+/* line 945, ../scss/style.scss */
+div.css-search {
+  background: #131212;
+  border: 1px solid black;
+  border-radius: 0px;
+  padding: 5px;
+  min-height: 40px;
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+
+/* line 955, ../scss/style.scss */
+div.css-search div.em-search-text {
+  margin: 0px;
+  padding-left: 0px;
+  background: none;
+}
+
+/* line 956, ../scss/style.scss */
+div.css-search input.em-search-text, div.css-search input.em-search-geo {
+  width: 80%;
+  font-size: 16px;
+  font-family: "Alegreya Sans SC", sans-serif;
+  line-height: 16px;
+  padding: 8px;
+  border: none;
+  outline: none !important;
+  color: #d8002f;
+  text-overflow: ellipsis;
+  background-color: #131212;
+  display: inline-block;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: none;
+}
+
+/* line 975, ../scss/style.scss */
+div.css-search div.em-search-main .em-search-submit {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  background: none !important;
+  background-color: none;
+  border-radius: 0px;
+  border: none;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  padding: 8px 10px;
+  text-decoration: none;
+  text-shadow: none;
+  line-height: 16px;
+  box-shadow: none;
+}
+
+/* line 993, ../scss/style.scss */
+div.css-search div.em-search-main .em-search-submit:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c4db99), color-stop(1, #a4c48a));
+  background: -moz-linear-gradient(center top, #c4db99 5%, #a4c48a 100%);
+  background: -ms-linear-gradient(top, #c4db99, #a4c48a);
+  background: -o-linear-gradient(top, #c4db99, #a4c48a);
+  background: linear-gradient(top, #c4db99, #a4c48a);
+  background-color: #A4C48A;
+}
+
+/* line 1002, ../scss/style.scss */
+div.css-search div.em-search-advanced label {
+  display: block;
+  float: left;
+  min-width: 100px;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif !important;
+}
+
+/* line 1010, ../scss/style.scss */
+div.em-search-advanced input {
+  color: #b9b261;
+  width: 100%;
+  background-color: #0f0f0f;
+  border: none;
+}
+/* line 1016, ../scss/style.scss */
+div.em-search-advanced select {
+  color: #b9b261;
+  width: 100%;
+  background: none;
+  background-color: #0f0f0f;
+  border: none;
+}
+
+/******************************************************************
+ B *uscar Boliches*
+ ******************************************************************/
+/* line 1028, ../scss/style.scss */
+#buscar_boliches {
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  height: auto;
+  /*max-height: 450px; 
+   * o *verflow-y: scroll;
+   */
+}
+/* line 1034, ../scss/style.scss */
+#buscar_boliches h2 {
+  display: block;
+  width: 20%;
+  background-color: #020A33;
+  font-size: 1em;
+  font-weight: 900;
+  margin-bottom: 0em;
+  padding: 0.10em;
+}
+/* line 1043, ../scss/style.scss */
+#buscar_boliches table {
+  width: 99%;
+}
+
+/* line 1048, ../scss/style.scss */
+.tablaboliches img {
+  margin: 0.5em 0 0.5em 0;
+}
+/* line 1051, ../scss/style.scss */
+.tablaboliches table {
+  display: table;
+  border-collapse: collapse;
+}
+/* line 1055, ../scss/style.scss */
+.tablaboliches tr {
+  border-width: 2px 0px 0px 0px;
+  border-style: solid;
+  border-color: #020A33;
+}
+/* line 1060, ../scss/style.scss */
+.tablaboliches td {
+  color: gray;
+}
+/* line 1063, ../scss/style.scss */
+.tablaboliches .col_fecha {
+  width: 13%;
+  color: #A22F2F;
+}
+/* line 1067, ../scss/style.scss */
+.tablaboliches .col_nombre_boliche {
+  width: 20%;
+}
+/* line 1071, ../scss/style.scss */
+.tablaboliches .col_location a {
+  font-size: 0.9em;
+  color: gray;
+}
+
+/******************************************************************
+ * SUBPAGINAS FIESTAS Y TOQUES
+ ******************************************************************/
+/* line 1084, ../scss/style.scss */
+.tablaseviene table {
+  display: table;
+  border-collapse: collapse;
+}
+/* line 1088, ../scss/style.scss */
+.tablaseviene tr {
+  border-width: 2px 0px 0px 0px;
+  border-style: solid;
+  display: block;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+/* line 1097, ../scss/style.scss */
+.col_fecha {
+  width: 12%;
+  color: white;
+  background-color: #0F0A0A;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 1.0625rem;
+}
+
+/* line 1104, ../scss/style.scss */
+.col_nombre {
+  width: 40%;
+}
+
+/* line 1107, ../scss/style.scss */
+.col_imagen {
+  width: 30%;
+}
+
+/* line 1111, ../scss/style.scss */
+.col_location a {
+  font-size: 0.9em;
+  color: gray;
+}
+
+/******************************************************************
+ * SINGLE DESTACADOS y DESTACADOS
+ ******************************************************************/
+/* Agregados Destaques y footer*/
+/* line 1126, ../scss/style.scss */
+.caja img {
+  position: absolute;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+/* line 1135, ../scss/style.scss */
+.caja .caption {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+/* line 1147, ../scss/style.scss */
+.caja .simple-caption {
+  height: 70px;
+  width: 95%;
+  display: block;
+  bottom: -70px;
+  text-align: center;
+}
+
+/* line 1155, ../scss/style.scss */
+.caja:hover .simple-caption {
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 1162, ../scss/style.scss */
+.caja {
+  overflow: hidden !important;
+  height: 180px !important;
+}
+
+/* line 1167, ../scss/style.scss */
+span.caption.simple-caption a p {
+  font-size: 13px;
+  color: #ffffff;
+}
+
+/* line 1173, ../scss/style.scss */
+.category-destacados h2 a {
+  font-family: "Alegreya Sans SC", sans-serif;
+  display: block !important;
+  background-color: #0E0D0D;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin: 0;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+/* line 1185, ../scss/style.scss */
+.category-destacados .index-card {
+  margin-bottom: 0.625rem;
+}
+
+/* line 1191, ../scss/style.scss */
+.attachment-single-small {
+  float: right;
+  margin: 0.3em 0 1em 0.3em !important;
+}
+
+/* line 1195, ../scss/style.scss */
+.single-title {
+  font-size: 2em;
+  margin: 0em;
+  color: #b9b261;
+}
+
+/* line 1201, ../scss/style.scss */
+.single_title {
+  font-family: "Alegreya Sans SC", sans-serif;
+  display: block !important;
+  background-color: #0E0D0D;
+  font-weight: 800;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  margin: 0;
+  color: white;
+  display: inline-block;
+}
+
+/* line 1213, ../scss/style.scss */
+.single .vcard {
+  font-size: 1em;
+  margin-top: 0em;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+
+/******************************************************************
+ * ARCHIVE
+ ******************************************************************/
+/* line 1226, ../scss/style.scss */
+.vcard {
+  margin-bottom: 0;
+}
+
+/* line 1230, ../scss/style.scss */
+.attachment-archive-small {
+  float: left;
+  margin-right: 1.5%;
+}
+
+/* line 1235, ../scss/style.scss */
+.index-card {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* line 1239, ../scss/style.scss */
+.archive h2 {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 1.5625rem;
+}
+
+/* line 1244, ../scss/style.scss */
+.archive p {
+  color: grey;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+/******************************************************************
+ * Pagina Cornetazos
+ ******************************************************************/
+/* line 1254, ../scss/style.scss */
+.category-cornetazos .videocorneta {
+  background: url("../img/playicon.png") center center no-repeat;
+  display: block;
+  width: 58px;
+  height: 58px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+}
+
+/* line 1270, ../scss/style.scss */
+.category-cornetazos {
+  text-align: center;
+}
+
+/* line 1273, ../scss/style.scss */
+.category-cornetazos .entry-content {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* line 1282, ../scss/style.scss */
+header.cornetahead a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 1287, ../scss/style.scss */
+header.cornetahead h2 {
+  background-color: #4d4d0c;
+  margin-bottom: -10px;
+  font-weight: bold;
+  border-style: none;
+  color: #ff6bff;
+  background-color: #424707;
+}
+
+/******************************************************************
+ E *nvia tu evento                                                    *
+ ******************************************************************/
+/* line 1299, ../scss/style.scss */
+.em-location-data-country {
+  display: none;
+}
+
+/* line 1302, ../scss/style.scss */
+.css-event-form {
+  width: 90%;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  color: #2e46ca;
+}
+/* line 1306, ../scss/style.scss */
+.css-event-form input {
+  color: #b9b261;
+  background-color: #0f0f0f;
+  border: 2px solid;
+  border-color: #5aa802;
+}
+/* line 1312, ../scss/style.scss */
+.css-event-form input[type="submit"] {
+  padding: 0.9375rem;
+}
+/* line 1315, ../scss/style.scss */
+.css-event-form h3 {
+  font-family: "Alegreya Sans SC", sans-serif;
+  display: block;
+  background-color: #515522;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+}
+/* line 1323, ../scss/style.scss */
+.css-event-form #event-owner-name, .css-event-form #event-owner-email {
+  display: inline-block;
+  width: 40%;
+}
+/* line 1328, ../scss/style.scss */
+.css-event-form .event-form-submitter label {
+  font-size: 100%;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  color: #2e46ca;
+  display: inline-block;
+}
+/* line 1335, ../scss/style.scss */
+.css-event-form #event-owner-name {
+  margin-left: 13%;
+}
+/* line 1338, ../scss/style.scss */
+.css-event-form #event-owner-email {
+  margin-left: 1%;
+}
+/* line 1341, ../scss/style.scss */
+.css-event-form #event-form #event-name {
+  width: 65%;
+  display: inline-block;
+}
+/* line 1345, ../scss/style.scss */
+.css-event-form .em-date-input-loc {
+  width: 27%;
+  display: inline-block;
+}
+/* line 1349, ../scss/style.scss */
+.css-event-form #start-time, .css-event-form #end-time {
+  width: 12%;
+  display: inline-block;
+}
+/* line 1353, ../scss/style.scss */
+.css-event-form #em-location-data table.em-location-data {
+  width: 81%;
+}
+/* line 1356, ../scss/style.scss */
+.css-event-form #em-location-data .em-location-map-container {
+  width: 79%;
+}
+
+/* line 1363, ../scss/style.scss */
+.event-form-where th {
+  color: #0CD39B;
+}
+
+/* line 1368, ../scss/style.scss */
+#em-location-search-tip {
+  color: gray;
+}
+
+/******************************************************************
+ * FOOTER
+ ******************************************************************/
+/* line 1377, ../scss/style.scss */
+#searchbox {
+  background-color: #eaf8fc;
+  background-image: linear-gradient(#ffffff, #d4e8ec);
+  border-radius: 35px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c4d9df #a4c3ca #83afb7;
+  width: 500px;
+  height: 35px;
+  padding: 10px;
+  margin: 100px auto 50px;
+  overflow: hidden;
+  /* Clear floats */
+}
+
+/* line 1393, ../scss/style.scss */
+#respond {
+  margin-top: 5%;
+}
+
+/* line 1396, ../scss/style.scss */
+#titulo_comentario {
+  width: 100%;
+  display: block;
+  background-color: maroon;
+  font-family: "Alegreya Sans SC", sans-serif;
+  display: block;
+  font-weight: 800;
+  font-size: 1.5rem;
+  word-spacing: 1rem;
+  color: #FCF0F0;
+  line-height: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+/* line 1413, ../scss/style.scss */
+#proba {
+  display: none;
+}
+
+/* line 1419, ../scss/style.scss */
+.link_location {
+  font-variant: normal;
+  font-size: 0.875rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 1431, ../scss/style.scss */
+#proba_wrapper table thead tr th,
+#proba_wrapper table thead tr td,
+#proba_wrapper table tfoot tr th,
+#proba_wrapper table tfoot tr td, #hoytable_wrapper table thead tr th,
+#hoytable_wrapper table thead tr td,
+#hoytable_wrapper table tfoot tr th,
+#hoytable_wrapper table tfoot tr td, #fiestatable_wrapper table thead tr th,
+#fiestatable_wrapper table thead tr td,
+#fiestatable_wrapper table tfoot tr th,
+#fiestatable_wrapper table tfoot tr td {
+  padding: 0.5rem 0.5rem 0.5rem;
+  font-size: 1rem;
+  background-color: #0c0b0b;
+  font-family: "Alegreya Sans SC", sans-serif;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
+/* line 1441, ../scss/style.scss */
+#proba_wrapper #proba, #proba_wrapper .restotablas, #hoytable_wrapper #proba, #hoytable_wrapper .restotablas, #fiestatable_wrapper #proba, #fiestatable_wrapper .restotablas {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-overflow: ellipsis;
+}
+/* line 1446, ../scss/style.scss */
+#proba_wrapper table.dataTable tbody tr, #hoytable_wrapper table.dataTable tbody tr, #fiestatable_wrapper table.dataTable tbody tr {
+  background-color: #0c0b0b;
+}
+/* line 1454, ../scss/style.scss */
+#proba_wrapper table.dataTable.hover tbody tr:hover,
+#proba_wrapper table.dataTable.hover tbody tr.odd:hover,
+#proba_wrapper table.dataTable.hover tbody tr.even:hover, #proba_wrapper table.dataTable.display tbody tr:hover,
+#proba_wrapper table.dataTable.display tbody tr.odd:hover,
+#proba_wrapper table.dataTable.display tbody tr.even:hover, #hoytable_wrapper table.dataTable.hover tbody tr:hover,
+#hoytable_wrapper table.dataTable.hover tbody tr.odd:hover,
+#hoytable_wrapper table.dataTable.hover tbody tr.even:hover, #hoytable_wrapper table.dataTable.display tbody tr:hover,
+#hoytable_wrapper table.dataTable.display tbody tr.odd:hover,
+#hoytable_wrapper table.dataTable.display tbody tr.even:hover, #fiestatable_wrapper table.dataTable.hover tbody tr:hover,
+#fiestatable_wrapper table.dataTable.hover tbody tr.odd:hover,
+#fiestatable_wrapper table.dataTable.hover tbody tr.even:hover, #fiestatable_wrapper table.dataTable.display tbody tr:hover,
+#fiestatable_wrapper table.dataTable.display tbody tr.odd:hover,
+#fiestatable_wrapper table.dataTable.display tbody tr.even:hover {
+  background-color: #0c0b0b;
+}
+/* line 1458, ../scss/style.scss */
+#proba_wrapper table.dataTable.row-border tbody th, #proba_wrapper table.dataTable.row-border tbody td, #proba_wrapper table.dataTable.display tbody th, #proba_wrapper table.dataTable.display tbody td, #hoytable_wrapper table.dataTable.row-border tbody th, #hoytable_wrapper table.dataTable.row-border tbody td, #hoytable_wrapper table.dataTable.display tbody th, #hoytable_wrapper table.dataTable.display tbody td, #fiestatable_wrapper table.dataTable.row-border tbody th, #fiestatable_wrapper table.dataTable.row-border tbody td, #fiestatable_wrapper table.dataTable.display tbody th, #fiestatable_wrapper table.dataTable.display tbody td {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  background-color: #0c0b0b;
+}
+/* line 1463, ../scss/style.scss */
+#proba_wrapper .group td, #hoytable_wrapper .group td, #fiestatable_wrapper .group td {
+  background-color: black !important;
+  color: #13be13;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+/* line 1470, ../scss/style.scss */
+#proba_wrapper .regiontabla, #hoytable_wrapper .regiontabla, #fiestatable_wrapper .regiontabla {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+}
+
+/* line 1480, ../scss/style.scss */
+#proba_filter, #hoytable_filter, #fiestatable_filter {
+  background-color: #0c0b0b;
+  margin-bottom: 4%;
+  width: 100%;
+}
+/* line 1484, ../scss/style.scss */
+#proba_filter input[type="search"], #hoytable_filter input[type="search"], #fiestatable_filter input[type="search"] {
+  width: 70%;
+  float: left;
+  font-size: 16px;
+  font-family: "Alegreya Sans SC", sans-serif;
+  line-height: 16px;
+  padding: 8px;
+  outline: none !important;
+  color: grey;
+  text-overflow: ellipsis;
+  background-color: white;
+  display: inline-block;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-bottom: 10px;
+  margin-top: 8px;
+}
+/* line 1504, ../scss/style.scss */
+#proba_filter .buscatabla, #hoytable_filter .buscatabla, #fiestatable_filter .buscatabla {
+  color: #13be13;
+  font-weight: bold;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 1.25rem;
+  float: left;
+  padding: 15px;
+  padding-right: 6px;
+}
+
+/*Menu */
+/* line 1517, ../scss/style.scss */
+#menu-item-5797 a {
+  padding-right: 0px;
+}
+
+/* line 1521, ../scss/style.scss */
+#menu-item-5800 a {
+  padding-left: 10px;
+}
+
+/*Mundial */
+/* line 1526, ../scss/style.scss */
+.mundial2014 th {
+  background-color: #34ccfe !important;
+  color: black !important;
+}
+
+/* line 1531, ../scss/style.scss */
+.mundial2014#fiestatable_filter .buscatabla {
+  color: #34ccfe !important;
+}
+
+/* line 1535, ../scss/style.scss */
+.menu-item-mundial-2014 a {
+  color: black !important;
+  background-color: #34ccfe !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+/* line 1542, ../scss/style.scss */
+.linklist {
+  color: #a49c48 !important;
+}
+
+/*Barra */
+/* line 1547, ../scss/style.scss */
+.top-bar-section ul li > a {
+  display: block;
+  width: 100%;
+  color: #ab7f32;
+  padding: 12px 0 12px 0;
+  padding-left: 20px;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background: black;
+}
